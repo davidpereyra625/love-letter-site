@@ -16,6 +16,10 @@ body {
 .container {
     text-align: center;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
 }
 
 h1 {
@@ -28,7 +32,7 @@ h1 {
 
 .valentine-message {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #fff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     margin-bottom: 2rem;

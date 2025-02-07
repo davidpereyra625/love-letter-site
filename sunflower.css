@@ -1,0 +1,186 @@
+.sunflower-container {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 1rem auto 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plant {
+    position: relative;
+    width: 110px;
+    height: 220px;
+}
+
+.pot {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 66px;
+    height: 55px;
+    background: #562B1A;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+}
+
+.stem-and-flower {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    width: 9px;
+    height: 165px;
+    transform-origin: bottom;
+    animation: sway 3s ease-in-out infinite;
+}
+
+.stem {
+    width: 100%;
+    height: 100%;
+    background: #228B22;
+}
+
+.flower {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 55px;
+}
+
+.flower-center {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #e9ad17;
+    border-radius: 50%;
+    z-index: 2;
+    border: 3px solid #b39700;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.petal {
+    position: absolute;
+    width: 22px;
+    height: 33px;
+    background: #FFD700;
+    border-radius: 50%;
+    transform-origin: center bottom;
+    z-index: 1;
+    left: 50%;
+    margin-left: -11px;
+}
+
+.face {
+    width: 33px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.eyes {
+    position: absolute;
+    top: 0;
+    width: 4.4px;
+    height: 4.4px;
+    background: black;
+    border-radius: 50%;
+}
+
+.eyes.left {
+    left: 6.6px;
+}
+
+.eyes.right {
+    right: 6.6px;
+}
+
+.smile {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 17.6px;
+    height: 8.8px;
+    border-radius: 0 0 8.8px 8.8px;
+    border: 2px solid black;
+    border-top: 0;
+}
+
+.leaf {
+    width: 27.5px;
+    height: 16.5px;
+    background: #228B22;
+    position: absolute;
+    border-radius: 16.5px 0;
+    transform-origin: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 2px solid #1a6b1a;
+}
+
+.leaf-1 {
+    left: 8.8px;
+    top: 30%;
+    transform: rotate(30deg);
+}
+
+.leaf-2 {
+    left: 3.3px;
+    top: 50%;
+    transform: rotate(150deg);
+}
+
+.leaf-3 {
+    left: 8.8px;
+    top: 70%;
+    transform: rotate(30deg);
+}
+
+@media (max-width: 480px) {
+    .sunflower-container {
+        width: 180px;
+        height: 180px;
+        margin-top: 0.5rem;
+    }
+    
+    .plant {
+        width: 90px;
+        height: 180px;
+    }
+    
+    .pot {
+        width: 54px;
+        height: 45px;
+    }
+    
+    .stem-and-flower {
+        width: 7px;
+        height: 135px;
+        bottom: 45px;
+    }
+    
+    .flower {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .petal {
+        width: 18px;
+        height: 27px;
+        margin-left: -9px;
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
